@@ -1,0 +1,106 @@
+.main{
+    margin : 0 auto;
+
+}
+.main>.main-container{
+    margin: 0 auto;
+    width: 1400px;
+    height : 1000px;
+    border: 5px solid black;
+    background-color: lightgray;
+    margin-bottom: 20px;
+    margin-top : 100px;
+    
+}
+.main>.main-container>#bd>#mainheader{
+    width: 1400px;
+    height:150px;
+    
+}
+.main>.main-container>#bd>#mainheader>h1{
+    margin: 50px;
+    float:left;
+    
+}
+.main>.main-container>#bd>#mainheader>h3{
+    margin : 50px;
+    float: left;
+    
+}
+#top_1,#top_2,#mid_1,#mid_2{
+    border : 3px solid black;
+    border-radius: 80px;
+    margin-left: 120px;
+    margin-top : 50px;
+    float:left;
+    height:300px;
+    width: 300px;
+}
+#top_3{
+    border : 3px solid black;
+    border-radius: 80px;
+    margin-left: 120px;
+    margin-top:30px;
+    float:left;
+    height:300px;
+    width: 300px;
+}
+#mid_3{
+    border : 3px solid black;
+    border-radius: 80px;
+    margin-left: 120px;
+    margin-top:50px;
+    float:left;
+    height:300px;
+    width: 300px;
+}
+#top_1>img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border : 1px solid black;   
+    float : left;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+#top_1>p{
+    margin-top : 50px;
+    margin-left : 30px;
+    width: 100px;
+    height : 60px;
+    float:left;
+    font-size : 30px;
+    font-style: bold;
+}
+#top_1>h2{
+    float:left;
+    width: 250px;
+    margin-top: 10px;
+    margin-left: 30px;
+    color:white;
+}
+#top_1>span{
+    float:left;
+    width: 250px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+#top_1>button{
+    float: right;
+    margin-right:50px;
+    
+}
+#bd{
+    margin : 0 auto;
+    border: 5px solid white;
+    border-radius: 150px;
+    width : 1390px;
+    height : 990px;
+    background-color: white;
+}
+#bd>.add{
+    float:right;
+    margin-right: 100px;
+    
+}
