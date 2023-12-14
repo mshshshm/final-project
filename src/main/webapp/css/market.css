@@ -23,8 +23,8 @@
 }
 
 .product__image {
-    max-width: 100%;
-    height: auto;
+    width: 300px; /* 원하는 너비로 설정 */
+    height: 200px;
     border-bottom: 1px solid #e1e2e3;
 }
 
@@ -54,8 +54,8 @@
 /* 내 물건 올리기 버튼 스타일 */
 .sell-button {
     position: absolute;
-    top: 20px; 
-    right: 20px; 
+    top: 20px;
+    right: 20px;
     background-color: var(--primary);
     color: #fff;
     padding: 10px 20px;
