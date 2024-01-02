@@ -21,12 +21,14 @@ public class TradeDetailResponseDto {
     private String title;
     private String content;
     private String username;
+    private String contact;
     private int status;
 
     private String imagePath;
 
     @Builder
-    public TradeDetailResponseDto(String userid, int no, String address, LocalDate writedate, int price, String title, String content, String imagePath, String username, int status) {
+    public TradeDetailResponseDto(String userid, int no, String address, LocalDate writedate, int price, String title,
+                                  String content, String imagePath, String username, int status, String contact) {
         this.userid = userid;
         this.no = no;
         this.address = address;
@@ -37,5 +39,6 @@ public class TradeDetailResponseDto {
         this.imagePath = imagePath;
         this.username = username;
         this.status = status;
+        this.contact = contact;
     }
 }

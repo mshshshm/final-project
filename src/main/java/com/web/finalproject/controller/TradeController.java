@@ -89,18 +89,10 @@ public class TradeController {
 
     @GetMapping("/trade/{no}")
     public String tradeDetail(@PathVariable int no, Model model, HttpSession session) {
-
         TradeDetailResponseDto trade = tradeService.findById(no);
-
         String userid = trade.getUserid();
-        String content = trade.getContent();
         String logId = (String) session.getAttribute("logId");
         model.addAttribute("trade", trade);
-
-        System.out.println("trade = " + trade.toString());
-
-        System.out.println("trade.getStatus() = " + trade.getStatus());
-
         if (session.getAttribute("logStatus") != "Y" || !userid.equals(logId)) {
             return "trade/tradeDetail";
         }
@@ -167,7 +159,16 @@ public class TradeController {
 
     @ResponseBody
     @PostMapping("/trade/{no}/updateStatus")
-    public String updateStatus(@PathVariable int no) {
+    public String updateStatus(@PathVariable int no, HttpSession session) {
+        if (session.getAttribute("logStatus") != "Y") {
+            return "sign/login";
+        }
+        String logId = (String) session.getAttribute("logId");
+        TradeDetailResponseDto trade = tradeService.findById(no);
+        String userid = trade.getUserid();
+        if (!logId.equals(userid)) {
+            return "/trade";
+        }
         tradeService.updateStatus(no ,0);
         return "redirect:/trade";
     }

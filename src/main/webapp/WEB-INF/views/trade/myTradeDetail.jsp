@@ -236,16 +236,21 @@
         <img src="../../../images/dog-1850465.jpg" alt="Map Example" class="map-example">
     </div>
 
+      <div class="transaction-info">
+          <div class="transaction-location">
+              <h2>연락처</h2>
+              <p>${trade.contact}</p>
+          </div>
+      </div>
   
     <div class="transaction-info">
         <div class="transaction-location">
             <h2>거래 장소</h2>
-            <p>거래를 진행할 위치에 대한 설명이 여기에 들어갑니다.</p>
+            <p>${trade.address}</p>
         </div>
       
     </div>
 
-    <button class="chat-button" onclick="window.location.href='chating.html';">채팅하기</button>
       <button id="completeTransaction" class="transaction-complete-button" onclick="completeTransaction()">거래완료</button>
 </div>
 </main>

@@ -18,6 +18,7 @@ public class TradeVO {
     private String title;
     private int like;
     private String content;
+    private String contact;
     private LocalDate writedate;
     private String address;
     private int price;

@@ -18,16 +18,18 @@ public class TradeForm {
     private String address;
     private String content;
     private String username;
+    private String contact;
     private int price;
     private List<MultipartFile> files = new ArrayList<>();
 
     @Builder
-    public TradeForm(String title, String address, int price, String content, String username) {
+    public TradeForm(String title, String address, int price, String content, String username, String contact) {
         this.title = title;
         this.address = address;
         this.price = price;
         this.content = content;
         this.username = username;
+        this.contact = contact;
     }
 
 }
